@@ -1,0 +1,123 @@
+{
+  "meetups": {
+    "Santa-Monica-New-Tech": {
+      "url": "http://www.meetup.com/Santa-Monica-New-Tech",
+      "title": "Santa Monica New Tech",
+      "enrollment": "6894"
+    },
+
+    "TechinMotionLA": {
+      "url": "http://www.meetup.com/TechinMotionLA",
+      "title": "Tech in Motion: Los Angeles",
+      "enrollment": "4685"
+    },
+
+    "ia-55": {
+      "url": "http://www.meetup.com/ia-55",
+      "title": "The Los Angeles User Experience Meetup",
+      "enrollment": "3812"
+    },
+
+    "latechgroup": {
+      "url": "http://www.meetup.com/latechgroup",
+      "title": "LA Web/Mobile Software Entrepreneurs",
+      "enrollment": "2881"
+    },
+
+    "LARoboticsClub": {
+      "url": "http://www.meetup.com/LARoboticsClub",
+      "title": "LA Robotics Club",
+      "enrollment": "2806"
+    },
+
+    "UXPALA": {
+      "url": "http://www.meetup.com/UXPALA",
+      "title": "User Experience Professionals Association of Los Angeles",
+      "enrollment": "2595"
+    },
+
+    "laphpdev": {
+      "url": "http://www.meetup.com/laphpdev",
+      "title": "LAPHP: The Los Angeles PHP Developers Group",
+      "enrollment": "2480"
+    },
+
+    "LearnToCodeLA": {
+      "url": "http://www.meetup.com/LearnToCodeLA",
+      "title": "Learn to Code LA",
+      "enrollment": "2456"
+    },
+
+    "Los-Angeles-Machine-Learning-Data-Science": {
+      "url": "http://www.meetup.com/Los-Angeles-Machine-Learning-Data-Science",
+      "title": "LA Machine Learning",
+      "enrollment": "2273"
+    },
+
+    "virtualrealityla": {
+      "url": "http://www.meetup.com/virtualrealityla",
+      "title": "Virtual Reality Los Angeles",
+      "enrollment": "2262"
+    },
+
+    "LAUnity3D": {
+      "url": "http://www.meetup.com/LAUnity3D",
+      "title": "LA Unity3D",
+      "enrollment": "2137"
+    },
+
+    "Los-Angeles-Big-Data-Users-Group": {
+      "url": "http://www.meetup.com/Los-Angeles-Big-Data-Users-Group",
+      "title": "Los Angeles Big Data Users Group",
+      "enrollment": "1980"
+    },
+
+    "Huge-LA": {
+      "url": "http://www.meetup.com/Huge-LA",
+      "title": "Huge Los Angeles",
+      "enrollment": "1920"
+    },
+
+    "LAInnovation": {
+      "url": "http://www.meetup.com/LAInnovation",
+      "title": "LA Innovators + Early Adopters",
+      "enrollment": "1902"
+    },
+
+    "web-34": {
+      "url": "http://www.meetup.com/web-34",
+      "title": "LA Web Application Developers Meetup",
+      "enrollment": "1853"
+    },
+
+    "laruby": {
+      "url": "http://www.meetup.com/laruby",
+      "title": "The Los Angeles Ruby/Rails Meetup Group",
+      "enrollment": "1830"
+    },
+
+    "SoCal-Node-JS": {
+      "url": "http://www.meetup.com/SoCal-Node-JS",
+      "title": "SoCal Node.js",
+      "enrollment": "1803"
+    },
+
+    "LADOTNET": {
+      "url": "http://www.meetup.com/LADOTNET",
+      "title": "Los Angeles .NET Developers Group",
+      "enrollment": "1741"
+    },
+
+    "Girl-Develop-It-Los-Angeles": {
+      "url": "http://www.meetup.com/Girl-Develop-It-Los-Angeles",
+      "title": "Girl Develop It Los Angeles",
+      "enrollment": "1731"
+    },
+
+    "Hack-Night-at-Carbon-Five-LA": {
+      "url": "http://www.meetup.com/Hack-Night-at-Carbon-Five-LA",
+      "title": "Carbon Five Hack Nights",
+      "enrollment": "1721"
+    }
+  }
+}
