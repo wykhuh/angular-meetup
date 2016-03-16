@@ -16,9 +16,6 @@
       password : "password"
     }, authHandler);
 
-    function getName(authData) {
-      return authData.password.email.replace(/@.*/, '');
-    }
 
     function authHandler(error, authData) {
       if (error) {
@@ -30,7 +27,7 @@
           if (authData) {
             ref.child("users").child(authData.uid).set({
               provider: authData.provider,
-              name: getName(authData)
+              email: authData.password.email
             });
           }
         });
