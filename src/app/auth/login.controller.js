@@ -3,16 +3,16 @@
 
   angular
     .module('yoGulp')
-    .controller('LoginController', LoginController);
+    .controller('LoginController', LoginController );
 
   /** @ngInject */
-  function LoginController() {
+  function LoginController($stateParams, $state) {
     var ref = new Firebase("https://wyk-phil.firebaseio.com");
 
     // TODO: replace hard coded login with form
-
+    console.log($stateParams)
     ref.authWithPassword({
-      email    : "waiyin@gophilosophie.com",
+      email    : $stateParams.name + "@gophilosophie.com",
       password : "password"
     }, authHandler);
 
@@ -21,7 +21,7 @@
       if (error) {
         console.log("Login Failed!", error);
       } else {
-        console.log("Authenticated successfully with payload:", authData);
+        console.log("Authenticated successfully with payload:", authData.password.email);
 
         ref.onAuth(function(authData) {
           if (authData) {
@@ -29,6 +29,7 @@
               provider: authData.provider,
               email: authData.password.email
             });
+            $state.go('home');
           }
         });
       }

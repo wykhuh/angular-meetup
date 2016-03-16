@@ -34,8 +34,8 @@
         controllerAs: 'vm'
       })
       .state('login', {
-        url: '/login',
-        template: '<h1>Hacky Login</h1>',
+        url: '/login?name',
+        templateUrl: 'app/auth/login.html',
         controller: 'LoginController',
         controllerAs: 'vm'
       })
