@@ -29,7 +29,6 @@
 
       var username = createUsername(authData.password.email);
       meetups = $firebaseArray(ref.child('userMeetup').child(username));
-      // console.log(meetups)
 
       ref.child('userMeetup').child(username).once('value', function(snapshot) {
         for(var item in snapshot.val()) {
