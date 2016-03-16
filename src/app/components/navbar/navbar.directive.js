@@ -11,7 +11,7 @@
         restrict: 'E',
         templateUrl: 'app/components/navbar/navbar.html',
         scope: {
-            authData: '='
+            loggedIn: '='
         },
         controller: NavbarController,
         controllerAs: 'vm',
@@ -22,7 +22,7 @@
 
       /** @ngInject */
       function NavbarController() {
-        this.authData = this.authData;
+        this.loggedIn = this.loggedIn;
       }
     }
 

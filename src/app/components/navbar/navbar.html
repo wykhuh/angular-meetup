@@ -11,8 +11,8 @@
         <li class="active"><a ng-href="#">Home</a></li>
         <li><a ui-sref="all_meetups">All Meetups</a></li>
         <li><a ui-sref="my_events">Upcoming Events</a></li>
-        <li><a ng-hide={{vm.authData}} ui-sref="login">Login</a></li>
-        <li><a ng-show={{vm.authData}} ui-sref="logout">Logout</a></li>
+        <li><a ng-hide={{vm.loggedIn}} ui-sref="login">Login</a></li>
+        <li><a ng-show={{vm.loggedIn}} ui-sref="logout">Logout</a></li>
       </ul>
     </div>
   </div>

@@ -1,14 +1,14 @@
 <div class="container">
 
   <div>
-    <acme-navbar auth-data="vm.authData"></acme-navbar>
+    <acme-navbar logged-in="vm.loggedIn"></acme-navbar>
   </div>
 
   <h1>My Meetup</h1>
-  <div ng-hide="vm.authData">
+  <div ng-hide="vm.loggedIn">
     Please login.
   </div>
-  <div ng-show="vm.authData">
+  <div ng-show="vm.loggedIn">
     <div ng-repeat="meetup in vm.meetups" class="">
       <div class="panel panel-default">
         <div class="panel-body">

@@ -13,6 +13,7 @@
     var events = [];
     var vm = this;
     vm.events = [];
+    vm.loggedIn = false;
 
     function createUsername(email) {
       // Firebase doesn't allow some characters to be used as keys
@@ -20,6 +21,8 @@
     }
 
     if(authData) {
+      vm.loggedIn = true;
+
       this.remove = function(meetup) {
         ref.child('userMeetup').child(username).child(meetup.$id).remove()
       }
