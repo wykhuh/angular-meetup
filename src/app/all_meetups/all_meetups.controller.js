@@ -24,6 +24,7 @@
     }
 
     var authData = ref.getAuth();
+    this.authData = authData;
 
     this.meetups = $firebaseArray(ref.child('meetups'));
 
@@ -35,6 +36,6 @@
         createUserMeetup(username, meetup);
       }
     }
-    
+
   }
 })();
