@@ -29,29 +29,20 @@
       // console.log(meetups)
 
       ref.child('userMeetup').child(username).once('value', function(snapshot) {
-        // The callback succeeded; do something with the final result.
-        console.log(snapshot.val());
         for(var item in snapshot.val()) {
-          console.log(snapshot.val()[item].id)
-
           $http.get('https://api.meetup.com/'+snapshot.val()[item].id+'/events').then(function(res){
             if(res.data.length) {
-              console.log(res.data.length)
               res.data.forEach(function(item){
+                // TODO: add moment
+                item.date = new Date(item.time).toLocaleString();
                 vm.events.push(item)
-                console.log(item)
               })
-
-
             }
           })
         }
-
       }, function(error) {
-        // The callback failed.
         console.error(error);
       });
-
 
 
 
