@@ -19,6 +19,11 @@
         controller: 'RegistrationController',
         controllerAs: 'vm'
       })
+      .state('login', {
+        url: '/login',
+        controller: 'LoginController',
+        controllerAs: 'vm'
+      })
       ;
 
     $urlRouterProvider.otherwise('/');
