@@ -6,12 +6,13 @@
     .controller('HomeController', HomeController);
 
   /** @ngInject */
-  function HomeController($firebaseArray, $http) {
+  function HomeController($firebaseArray, $http, $state) {
     var ref = new Firebase("https://wyk-phil.firebaseio.com");
     var authData = ref.getAuth();
     var vm = this;
     vm.events = [];
     vm.meetups = [];
+    vm.authData = false;
 
     function createUsername(email) {
       // Firebase doesn't allow some characters to be used as keys
@@ -19,6 +20,7 @@
     }
 
     if(authData) {
+      vm.authData = true;
       this.remove = function(meetup) {
         ref.child('userMeetup').child(username).child(meetup.$id).remove()
       }
@@ -46,9 +48,6 @@
       }, function(error) {
         console.error(error);
       });
-
-
-
 
     } else {
       this.meetups = [];

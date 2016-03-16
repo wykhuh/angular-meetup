@@ -39,6 +39,11 @@
         controller: 'LoginController',
         controllerAs: 'vm'
       })
+      .state('logout', {
+        url: '/logout',
+        controller: 'LogoutController',
+        controllerAs: 'vm'
+      })
       ;
 
     $urlRouterProvider.otherwise('/');
