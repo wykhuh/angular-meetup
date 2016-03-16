@@ -20,6 +20,13 @@
         controller: 'AllMeetupsController',
         controllerAs: 'vm'
       })
+      .state('my_events', {
+        url: '/my_events',
+        templateUrl: 'app/my_events/my_events.html',
+        controller: 'MyEventsController',
+        controllerAs: 'vm'
+      })
+
       .state('registration', {
         url: '/registration',
         template: '<h1>Hacky Registration</h1>',
