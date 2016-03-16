@@ -6,7 +6,9 @@
     .controller('MainController', MainController);
 
   /** @ngInject */
-  function MainController() {
+  function MainController($firebaseObject) {
+    var ref = new Firebase("https://wyk-phil.firebaseio.com");
 
+    this.data = $firebaseObject(ref);
   }
 })();
