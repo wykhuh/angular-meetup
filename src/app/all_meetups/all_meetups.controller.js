@@ -18,6 +18,12 @@
       })
     }
 
+    function createMeetupUser(username, meetup) {
+      ref.child('meetupUser').child(meetup.$id).push({
+         user: username
+      })
+    }
+
     function createUsername(email) {
       // Firebase doesn't allow some characters to be used as keys
       return email.replace(/[\.#\$\[\]@]/g,'')
@@ -34,6 +40,7 @@
         var email = authData.password.email;
         var username = createUsername(email)
         createUserMeetup(username, meetup);
+        createMeetupUser(username, meetup);
       }
     }
 
