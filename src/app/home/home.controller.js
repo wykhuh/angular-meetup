@@ -26,28 +26,9 @@
       }
 
       var username = createUsername(authData.password.email);
-      // this.meetups = $firebaseArray(ref.child('userMeetup').child(username));
+      this.meetups = $firebaseArray(ref.child('userMeetup').child(username));
 
-
-
-      ref.child('userMeetup').child(username).once('value', function(snapshot) {
-        var items = snapshot.val();
-        for(var item in items) {
-          vm.meetups.push(items[item])
-
-
-          $http.get('https://api.meetup.com/' + items[item].id + '/events')
-          .then(function(res){
-            if(res.data.length) {
-              res.data.forEach(function(item){
-                vm.events.push(item);
-              })
-            }
-          })
-        }
-      }, function(error) {
-        console.error(error);
-      });
+      this.events = $firebaseArray(ref.child('userEvent').child(username));
 
     } else {
       this.meetups = [];

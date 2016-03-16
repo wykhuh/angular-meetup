@@ -24,7 +24,8 @@
       ref.child('userEvent').child(username).push({
          name: event.name,
          link: event.link,
-         date: event.date
+         date: event.date,
+         group: event.group
       })
     }
 
