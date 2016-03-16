@@ -8,7 +8,7 @@
   /** @ngInject */
   function AllMeetupsController($firebaseArray) {
     var ref = new Firebase("https://wyk-phil.firebaseio.com");
-
+    var authData = ref.getAuth();
 
     function createUserMeetup(username, meetup) {
       ref.child('userMeetup').child(username).push({
@@ -29,9 +29,7 @@
       return email.replace(/[\.#\$\[\]@]/g,'')
     }
 
-    var authData = ref.getAuth();
     this.authData = authData;
-
     this.meetups = $firebaseArray(ref.child('meetups'));
 
     // TODO: fix bug. save() sometimes saves one meetup twice
