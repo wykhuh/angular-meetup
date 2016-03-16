@@ -13,7 +13,13 @@
         templateUrl: 'app/all_meetups/all_meetups.html',
         controller: 'AllMeetupsController',
         controllerAs: 'vm'
-      });
+      })
+      .state('registration', {
+        url: '/registration',
+        controller: 'RegistrationController',
+        controllerAs: 'vm'
+      })
+      ;
 
     $urlRouterProvider.otherwise('/');
   }
