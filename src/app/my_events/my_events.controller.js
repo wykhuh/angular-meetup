@@ -20,11 +20,25 @@
       return email.replace(/[\.#\$\[\]@]/g,'')
     }
 
+    function createUserEvent(username, event) {
+      ref.child('userEvent').child(username).push({
+         name: event.name,
+         link: event.link,
+         date: event.date
+      })
+    }
+
     if(authData) {
       vm.loggedIn = true;
 
       this.remove = function(meetup) {
         ref.child('userMeetup').child(username).child(meetup.$id).remove()
+      }
+
+      this.save = function save(event) {
+        var email = authData.password.email;
+        var username = createUsername(email)
+        createUserEvent(username, event);
       }
 
       var username = createUsername(authData.password.email);
