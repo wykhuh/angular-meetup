@@ -7,8 +7,8 @@
 
   /** @ngInject */
   function AllMeetupsController($firebaseArray) {
-    var meetupRef = new Firebase("https://wyk-phil.firebaseio.com/meetups");
+    var ref = new Firebase("https://wyk-phil.firebaseio.com");
 
-    this.meetups = $firebaseArray(meetupRef);
+    this.meetups = $firebaseArray(ref.child('meetups'));
   }
 })();
