@@ -3,7 +3,10 @@
   <div>
     <acme-navbar logged-in="vm.loggedIn"></acme-navbar>
   </div>
-  <h1>Upcoming Events</h1>
+  <h1>Hacky Upcoming Events</h1>
+  <p>Because of Cors, the events might not display since we are grabbing them
+  from the Meetup API. I got around CORS by installing
+  <a href="https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi"> All Control Allow Origin</a> Chrome Plugin. </p>
   <div ng-hide="vm.loggedIn">
     Please login.
   </div>
