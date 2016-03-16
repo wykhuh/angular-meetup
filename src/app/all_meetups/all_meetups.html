@@ -1,0 +1,18 @@
+<div class="container">
+
+  <div>
+    <acme-navbar creation-date="main.creationDate"></acme-navbar>
+  </div>
+
+  <h1>Tech  Meetups</h1>
+  <div ng-repeat="meetup in vm.meetups" class="">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <a href="{{meetup.url}}">{{meetup.title}}</a>
+        <a href="" ng-click="vm.save" class="btn btn-primary">Save</a>
+      </div>
+    </div>
+
+  </div>
+
+</div>

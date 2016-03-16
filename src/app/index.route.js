@@ -10,8 +10,8 @@
     $stateProvider
       .state('home', {
         url: '/',
-        templateUrl: 'app/main/main.html',
-        controller: 'MainController',
+        templateUrl: 'app/all_meetups/all_meetups.html',
+        controller: 'AllMeetupsController',
         controllerAs: 'vm'
       });
 
